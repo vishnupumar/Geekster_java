@@ -3,6 +3,7 @@ public class Main {
     static char lastNonRepeating(String str){
         int n = str.length();
         int[] count = new int[26];
+        str = str.toLowerCase();
         
         for(int i=0;i<n;i++){
             int ind = str.charAt(i) - 97;
@@ -20,6 +21,7 @@ public class Main {
     static char firstRepeating(String str){
         int n = str.length();
         int[] count = new int[26];
+        str = str.toLowerCase();
         
         for(int i=0;i<n;i++){
             int ind = str.charAt(i) - 97;
@@ -37,6 +39,7 @@ public class Main {
      static char lastRepeating(String str){
         int n = str.length();
         int[] count = new int[26];
+         str = str.toLowerCase();
         
         for(int i=0;i<n;i++){
             int ind = str.charAt(i) - 97;
